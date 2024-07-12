@@ -11,6 +11,9 @@ export default {
         hsLinkHov: "#A5DCE4",
       }
     },
+    container: {
+      padding: '2rem',
+    },
   },
   plugins: [],
 }
