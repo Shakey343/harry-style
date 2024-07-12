@@ -7,6 +7,7 @@ const Navbar = () => {
       <div>
         <a src="/#about" className="px-3 hover:text-hsRed border-solid border-r-2 border-hsBeige">About</a>
         <NavLink to="/projects" className="px-3 hover:text-hsRed">Projects</NavLink>
+        {/* comment */}
       </div>
     </nav>
   );
