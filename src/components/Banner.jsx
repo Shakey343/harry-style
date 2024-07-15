@@ -9,9 +9,9 @@ const Banner = () => {
     >
       <div className="container mx-auto drop-shadow-2xl text-3xl font-medium relative text-hsBeige">
         <h1>
-          Yes that&apos;s my real name
+          <strong>Yes</strong> that&apos;s my real name
           <br />
-          <div className="absolute left-16">and <span className="font-bold">no</span>,</div>
+          <div className="absolute left-16">and <strong>no</strong>,</div>
           <br />
           <div className="absolute left-12">I&apos;m not from One Direction</div>
         </h1>
