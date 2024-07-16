@@ -1,6 +1,15 @@
+import { Cloudinary } from "@cloudinary/url-gen";
 import Banner from "./Banner";
+import { AdvancedImage } from "@cloudinary/react";
 
 const Home = () => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dov7jlxo5'
+    }
+  });
+
+  const harryHeadshot = cld.image("harrystyle/images/harry_headshot");
   return (
     <main className="bg-hsBlack">
       <Banner />
@@ -55,11 +64,8 @@ const Home = () => {
           </p>
           <p>I look forward to hearing from you!</p>
         </div>
-        <div className="harryImg hidden md:block">
-          <img
-            alt="A headshot of me"
-            src="https://www.harrystyle.co.uk/assets/harry_headshot-b97f5e43656bde14df7a23697467269312e8e308a8783d9c47f6971276793f0a.jpg"
-          />
+        <div className="hidden md:block">
+          <AdvancedImage cldImg={harryHeadshot}/>
         </div>
       </div>
     </main>
